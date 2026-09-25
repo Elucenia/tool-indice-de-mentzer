@@ -1,0 +1,151 @@
+{
+  "tool": {
+    "id": "indice-de-mentzer",
+    "title": "Índice de Mentzer",
+    "short": "Traço talassêmico ou anemia ferropriva?",
+    "desc": "Índice de Mentzer (VCM ÷ contagem de hemácias) para a anemia microcítica: abaixo de 13 sugere traço talassêmico; acima de 13, deficiência de ferro.",
+    "lead": "Ajuda a separar, na microcitose, o traço de talassemia da anemia ferropriva usando apenas o hemograma.",
+    "spec": [
+      "hematologia-e-hemoterapia",
+      "medicina-laboratorial",
+      "pediatria",
+      "clinica-medica"
+    ],
+    "fields": [
+      [
+        "vcm",
+        "VCM",
+        "num",
+        {
+          "min": 40,
+          "max": 130,
+          "step": 0.1,
+          "unit": "fL",
+          "ph": "65"
+        }
+      ],
+      [
+        "hem",
+        "Hemácias",
+        "num",
+        {
+          "min": 1,
+          "max": 9,
+          "step": 0.01,
+          "unit": "milhões/µL",
+          "ph": "5,5"
+        }
+      ]
+    ],
+    "formula": "<p><strong>Índice de Mentzer = VCM (fL) ÷ hemácias (milhões/µL)</strong>.</p>",
+    "table": [
+      [
+        "Índice",
+        "Sugere"
+      ],
+      [
+        "&lt; 13",
+        "Traço talassêmico (muitas hemácias pequenas)"
+      ],
+      [
+        "&gt; 13",
+        "Anemia ferropriva (poucas hemácias pequenas)"
+      ],
+      [
+        "= 13",
+        "Indeterminado"
+      ]
+    ],
+    "table_note": "Na metanálise de Hoffmann, o desempenho dos índices discriminantes variou bastante entre populações; nenhum substitui ferritina e eletroforese.",
+    "tips": [
+      "Serve para microcitose (VCM &lt; 80 fL); em VCM normal, o índice não tem significado.",
+      "Ferropenia e traço talassêmico podem coexistir: trate a deficiência de ferro e repita o hemograma e a eletroforese depois.",
+      "A eletroforese com HbA2 &gt; 3,5% confirma traço β; o traço α costuma ter eletroforese normal e é diagnóstico de exclusão (ou por teste genético).",
+      "Em gestantes e crianças, o desempenho é menor; o diagnóstico definitivo sempre depende de ferritina e eletroforese."
+    ],
+    "sources": [
+      [
+        "Mentzer WC Jr. Differentiation of iron deficiency from thalassaemia trait. Lancet, 1973.",
+        "https://doi.org/10.1016/S0140-6736(73)91446-3"
+      ],
+      [
+        "Hoffmann JJ et al. Discriminant indices for distinguishing thalassemia and iron deficiency in patients with microcytic anemia: a meta-analysis. Clin Chem Lab Med, 2015.",
+        "https://doi.org/10.1515/cclm-2015-0179"
+      ]
+    ],
+    "cases": [
+      [
+        "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        {
+          "vcm": 65,
+          "hem": 5.5
+        },
+        {
+          "raw": {
+            "mentzer": 11.818
+          },
+          "main": "11,8",
+          "verdict": "talassemia"
+        }
+      ],
+      [
+        "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        {
+          "vcm": 70,
+          "hem": 4
+        },
+        {
+          "raw": {
+            "mentzer": 17.5
+          },
+          "verdict": "ferropriva"
+        }
+      ],
+      [
+        "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        {
+          "vcm": 65,
+          "hem": 5
+        },
+        {
+          "raw": {
+            "mentzer": 13
+          },
+          "verdict": "indeterminado"
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}

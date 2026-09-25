@@ -1,0 +1,57 @@
+[
+  {
+    "label": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+    "input": {
+      "vcm": 65,
+      "hem": 5.5
+    },
+    "expected": {
+      "raw": {
+        "mentzer": 11.818
+      },
+      "main": "11,8",
+      "verdict": "talassemia"
+    },
+    "originalInput": {
+      "vcm": 65,
+      "hem": 5.5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+    "input": {
+      "vcm": 70,
+      "hem": 4
+    },
+    "expected": {
+      "raw": {
+        "mentzer": 17.5
+      },
+      "verdict": "ferropriva"
+    },
+    "originalInput": {
+      "vcm": 70,
+      "hem": 4
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+    "input": {
+      "vcm": 65,
+      "hem": 5
+    },
+    "expected": {
+      "raw": {
+        "mentzer": 13
+      },
+      "verdict": "indeterminado"
+    },
+    "originalInput": {
+      "vcm": 65,
+      "hem": 5
+    },
+    "expandedZeroOptions": []
+  }
+]
