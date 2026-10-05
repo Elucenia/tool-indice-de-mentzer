@@ -1,0 +1,276 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field vcm",
+    "input": {
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field vcm",
+    "input": {
+      "vcm": "",
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" vcm",
+    "input": {
+      "vcm": "NaN",
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" vcm",
+    "input": {
+      "vcm": "Infinity",
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" vcm",
+    "input": {
+      "vcm": "1e309",
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" vcm",
+    "input": {
+      "vcm": "invalid",
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} vcm",
+    "input": {
+      "vcm": {},
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true vcm",
+    "input": {
+      "vcm": true,
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum vcm",
+    "input": {
+      "vcm": 36,
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum vcm",
+    "input": {
+      "vcm": 143,
+      "hem": 5.5
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vcm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field hem",
+    "input": {
+      "vcm": 65
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field hem",
+    "input": {
+      "vcm": 65,
+      "hem": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" hem",
+    "input": {
+      "vcm": 65,
+      "hem": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" hem",
+    "input": {
+      "vcm": 65,
+      "hem": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" hem",
+    "input": {
+      "vcm": 65,
+      "hem": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" hem",
+    "input": {
+      "vcm": 65,
+      "hem": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} hem",
+    "input": {
+      "vcm": 65,
+      "hem": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true hem",
+    "input": {
+      "vcm": 65,
+      "hem": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum hem",
+    "input": {
+      "vcm": 65,
+      "hem": 0
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum hem",
+    "input": {
+      "vcm": 65,
+      "hem": 10
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "hem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

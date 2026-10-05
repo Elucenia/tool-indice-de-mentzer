@@ -5,6 +5,7 @@
     "short": "Traço talassêmico ou anemia ferropriva?",
     "desc": "Índice de Mentzer (VCM ÷ contagem de hemácias) para a anemia microcítica: abaixo de 13 sugere traço talassêmico; acima de 13, deficiência de ferro.",
     "lead": "Ajuda a separar, na microcitose, o traço de talassemia da anemia ferropriva usando apenas o hemograma.",
+    "kind": "Calculadora",
     "spec": [
       "hematologia-e-hemoterapia",
       "medicina-laboratorial",
@@ -38,31 +39,6 @@
       ]
     ],
     "formula": "<p><strong>Índice de Mentzer = VCM (fL) ÷ hemácias (milhões/µL)</strong>.</p>",
-    "table": [
-      [
-        "Índice",
-        "Sugere"
-      ],
-      [
-        "&lt; 13",
-        "Traço talassêmico (muitas hemácias pequenas)"
-      ],
-      [
-        "&gt; 13",
-        "Anemia ferropriva (poucas hemácias pequenas)"
-      ],
-      [
-        "= 13",
-        "Indeterminado"
-      ]
-    ],
-    "table_note": "Na metanálise de Hoffmann, o desempenho dos índices discriminantes variou bastante entre populações; nenhum substitui ferritina e eletroforese.",
-    "tips": [
-      "Serve para microcitose (VCM &lt; 80 fL); em VCM normal, o índice não tem significado.",
-      "Ferropenia e traço talassêmico podem coexistir: trate a deficiência de ferro e repita o hemograma e a eletroforese depois.",
-      "A eletroforese com HbA2 &gt; 3,5% confirma traço β; o traço α costuma ter eletroforese normal e é diagnóstico de exclusão (ou por teste genético).",
-      "Em gestantes e crianças, o desempenho é menor; o diagnóstico definitivo sempre depende de ferritina e eletroforese."
-    ],
     "sources": [
       [
         "Mentzer WC Jr. Differentiation of iron deficiency from thalassaemia trait. Lancet, 1973.",
@@ -115,9 +91,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -126,17 +99,153 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T17:15:29.797Z",
+      "total": 2,
+      "passed": 2,
+      "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+      "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Mentzer 1973:VCM/hemácias, milhões/µL; regra de triagemnão diagnóstico",
+    "implementationVersion": "indice-de-mentzer@native-2026-10-03+b08274689a09",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/4123424/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Índice de Mentzer = VCM (fL) ÷ hemácias (milhões/µL) .",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "vcm",
+            "label": "VCM",
+            "type": "num",
+            "min": 40,
+            "max": 130,
+            "unit": "fL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hem",
+            "label": "Hemácias",
+            "type": "num",
+            "min": 1,
+            "max": 9,
+            "unit": "milhões/µL",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "7cc79ed2e83d3e036cbef3899e94a7f24000f52b5139ed6bd94395e3030738e3"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Mentzer WC Jr. Differentiation of iron deficiency from thalassaemia trait. Lancet, 1973.",
+          "url": "https://doi.org/10.1016/S0140-6736(73)91446-3",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Differentiation of iron deficiency from thalassaemia trait.",
+            "year": "1973",
+            "firstPublicationDate": "1973-04-01",
+            "doi": "10.1016/s0140-6736(73)91446-3",
+            "pmid": "4123424",
+            "journal": "Lancet (London, England)",
+            "authors": "Mentzer WC."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/4123424/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Hoffmann JJ et al. Discriminant indices for distinguishing thalassemia and iron deficiency in patients with microcytic anemia: a meta-analysis. Clin Chem Lab Med, 2015.",
+          "url": "https://doi.org/10.1515/cclm-2015-0179",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Discriminant indices for distinguishing thalassemia and iron deficiency in patients with microcytic anemia: a meta-analysis.",
+            "year": "2015",
+            "firstPublicationDate": "2015-11-01",
+            "doi": "10.1515/cclm-2015-0179",
+            "pmid": "26536581",
+            "journal": "Clinical chemistry and laboratory medicine",
+            "authors": "Hoffmann JJ, Urrechaga E, Aguirre U."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/26536581/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "333dbf63f6dc90133c24dd09f7ea9548f41bc9b0d2abab9ac52f74658192dea5",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T17:15:29.797Z",
+        "total": 2,
+        "passed": 2,
+        "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+        "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "9937701e9e56bc0529f9446257a2ecd66c6251d25b1847b53ef554cd0c0d0fc9",
+          "meaning": "Reference to the already recorded per-tool evidence; no new test or approval is created by this synchronization."
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "b08274689a092b0f9e2d1cda410f3efc2fda670816ff16ca9c60f28af47e6e95"
+    },
+    "limits": "O índice de Mentzer é uma regra de triagem em microcitose, calculada com VCM em fL e hemácias em milhões/µL, não com a contagem bruta por µL. Não confirma deficiência de ferro nem traço talassêmico. A meta-análise de Hoffmann 2015 mostrou que os índices discriminantes não têm sensibilidade e especificidade de 100% e, em conjunto, tiveram desempenho melhor em adultos que em crianças. Resultados sugestivos exigem investigação confirmatória; não se presume a mesma acurácia em todas as populações.",
+    "limitsEvidence": {
+      "status": "original-meta-analysis-abstract-read",
+      "sources": [
+        {
+          "url": "https://doi.org/10.1515/cclm-2015-0179",
+          "edition": "Hoffmann2015",
+          "readScope": "Exact abstract of original meta-analysis fully read:99articles,12indices;no100%sensitivity/specificity;adultperformancebetterthanchildren."
+        },
+        {
+          "url": "https://doi.org/10.1016/S0140-6736(73)91446-3",
+          "edition": "Mentzer1973",
+          "readScope": "Identity only."
+        }
+      ],
+      "populationScope": "Microcytic red blood cells;screening discrimination,not definitive iron/thalassemia diagnosis.",
+      "remainingChecks": [
+        "Original1973 full paper and threshold derivation not newly read.",
+        "Meta-analysis abstract does not establish every local boundary or combined iron/thalassemia condition."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/indice-de-mentzer/calculator.js",
+    "bytes": 4693,
+    "sha256": "b08274689a092b0f9e2d1cda410f3efc2fda670816ff16ca9c60f28af47e6e95"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "372bd52788a9139907bfa9c8a57b214d35a1a44b84c00bf298f526e520f36400",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "5f79a8256ce88f8d1541eb68b2b2f204f2ed517ef97d29bf08aa099b7cc3ea5b",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,6 +1,13 @@
 [
   {
-    "label": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+    "id": "indice-de-mentzer",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+    "originalInput": {
+      "vcm": 65,
+      "hem": 5.5
+    },
     "input": {
       "vcm": 65,
       "hem": 5.5
@@ -12,14 +19,34 @@
       "main": "11,8",
       "verdict": "talassemia"
     },
-    "originalInput": {
-      "vcm": 65,
-      "hem": 5.5
+    "recordedResult": {
+      "main": [
+        "11,8",
+        ""
+      ],
+      "label": "Índice de Mentzer (VCM ÷ hemácias)",
+      "raw": {
+        "mentzer": 11.818181818181818
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+    "id": "indice-de-mentzer",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+    "originalInput": {
+      "vcm": 70,
+      "hem": 4
+    },
     "input": {
       "vcm": 70,
       "hem": 4
@@ -30,14 +57,34 @@
       },
       "verdict": "ferropriva"
     },
-    "originalInput": {
-      "vcm": 70,
-      "hem": 4
+    "recordedResult": {
+      "main": [
+        "17,5",
+        ""
+      ],
+      "label": "Índice de Mentzer (VCM ÷ hemácias)",
+      "raw": {
+        "mentzer": 17.5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+    "id": "indice-de-mentzer",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+    "originalInput": {
+      "vcm": 65,
+      "hem": 5
+    },
     "input": {
       "vcm": 65,
       "hem": 5
@@ -48,10 +95,23 @@
       },
       "verdict": "indeterminado"
     },
-    "originalInput": {
-      "vcm": 65,
-      "hem": 5
+    "recordedResult": {
+      "main": [
+        "13,0",
+        ""
+      ],
+      "label": "Índice de Mentzer (VCM ÷ hemácias)",
+      "raw": {
+        "mentzer": 13
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

@@ -1,0 +1,266 @@
+{
+  "id": "indice-de-mentzer",
+  "at": "2026-10-05T17:29:49.661Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/indice-de-mentzer/calculator.js",
+    "bytes": 4693,
+    "sha256": "b08274689a092b0f9e2d1cda410f3efc2fda670816ff16ca9c60f28af47e6e95"
+  },
+  "cases": [
+    {
+      "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+      "input": {
+        "vcm": 65,
+        "hem": 5.5
+      },
+      "obtained": {
+        "id": "indice-de-mentzer",
+        "main": [
+          "11,8",
+          ""
+        ],
+        "label": "Índice de Mentzer (VCM ÷ hemácias)",
+        "raw": {
+          "mentzer": 11.818181818181818
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "11,8",
+          "obtained": "11,8",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.mentzer",
+          "expected": 11.818,
+          "obtained": 11.818181818181818,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.000181818181818727,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mentzer",
+          "expected": 11.818181818181818,
+          "obtained": 11.818181818181818,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "11,8",
+          "obtained": "11,8",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+      "input": {
+        "vcm": 70,
+        "hem": 4
+      },
+      "obtained": {
+        "id": "indice-de-mentzer",
+        "main": [
+          "17,5",
+          ""
+        ],
+        "label": "Índice de Mentzer (VCM ÷ hemácias)",
+        "raw": {
+          "mentzer": 17.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.mentzer",
+          "expected": 17.5,
+          "obtained": 17.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mentzer",
+          "expected": 17.5,
+          "obtained": 17.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "17,5",
+          "obtained": "17,5",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+      "input": {
+        "vcm": 65,
+        "hem": 5
+      },
+      "obtained": {
+        "id": "indice-de-mentzer",
+        "main": [
+          "13,0",
+          ""
+        ],
+        "label": "Índice de Mentzer (VCM ÷ hemácias)",
+        "raw": {
+          "mentzer": 13
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.mentzer",
+          "expected": 13,
+          "obtained": 13,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mentzer",
+          "expected": 13,
+          "obtained": 13,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "13,0",
+          "obtained": "13,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 24,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
