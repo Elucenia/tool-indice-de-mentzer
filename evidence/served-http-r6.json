@@ -1,0 +1,625 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "indice-de-mentzer",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/indice-de-mentzer/calculator.js",
+    "sha256": "b08274689a092b0f9e2d1cda410f3efc2fda670816ff16ca9c60f28af47e6e95",
+    "bytes": 4693
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "indice-de-mentzer",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+      "originalInput": {
+        "vcm": 65,
+        "hem": 5.5
+      },
+      "input": {
+        "vcm": 65,
+        "hem": 5.5
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "mentzer": 11.818
+        },
+        "main": "11,8",
+        "verdict": "talassemia"
+      },
+      "recordedResult": {
+        "main": [
+          "11,8",
+          ""
+        ],
+        "label": "Índice de Mentzer (VCM ÷ hemácias)",
+        "raw": {
+          "mentzer": 11.818181818181818
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-mentzer/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "vcm": 65,
+            "hem": 5.5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/indice-de-mentzer/calculate",
+          "startedAt": "2026-10-05T17:38:50.143Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "indice-de-mentzer",
+              "main": [
+                "11,8",
+                ""
+              ],
+              "label": "Índice de Mentzer (VCM ÷ hemácias)",
+              "raw": {
+                "mentzer": 11.818181818181818
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "64e6603c7f7ab86956ad810468b159238a430a2988fe0252e9b3af774530f896",
+          "bytes": 178,
+          "elapsedMs": 9.19509999998263
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-mentzer/calculate",
+        "startedAt": "2026-10-05T17:38:50.143Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "indice-de-mentzer",
+            "main": [
+              "11,8",
+              ""
+            ],
+            "label": "Índice de Mentzer (VCM ÷ hemácias)",
+            "raw": {
+              "mentzer": 11.818181818181818
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "64e6603c7f7ab86956ad810468b159238a430a2988fe0252e9b3af774530f896",
+        "bytes": 178,
+        "elapsedMs": 9.19509999998263
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "11,8",
+            "obtained": "11,8",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.mentzer",
+            "expected": 11.818,
+            "obtained": 11.818181818181818,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.000181818181818727,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mentzer",
+            "expected": 11.818181818181818,
+            "obtained": 11.818181818181818,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "11,8",
+            "obtained": "11,8",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "indice-de-mentzer",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+      "originalInput": {
+        "vcm": 70,
+        "hem": 4
+      },
+      "input": {
+        "vcm": 70,
+        "hem": 4
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "mentzer": 17.5
+        },
+        "verdict": "ferropriva"
+      },
+      "recordedResult": {
+        "main": [
+          "17,5",
+          ""
+        ],
+        "label": "Índice de Mentzer (VCM ÷ hemácias)",
+        "raw": {
+          "mentzer": 17.5
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-mentzer/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "vcm": 70,
+            "hem": 4
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/indice-de-mentzer/calculate",
+          "startedAt": "2026-10-05T17:38:50.457Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "indice-de-mentzer",
+              "main": [
+                "17,5",
+                ""
+              ],
+              "label": "Índice de Mentzer (VCM ÷ hemácias)",
+              "raw": {
+                "mentzer": 17.5
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6cffd4bdfe80053e919232a628cada2f52731c0f51bde6127422cf9b7544f291",
+          "bytes": 164,
+          "elapsedMs": 8.109599999996135
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-mentzer/calculate",
+        "startedAt": "2026-10-05T17:38:50.457Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "indice-de-mentzer",
+            "main": [
+              "17,5",
+              ""
+            ],
+            "label": "Índice de Mentzer (VCM ÷ hemácias)",
+            "raw": {
+              "mentzer": 17.5
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6cffd4bdfe80053e919232a628cada2f52731c0f51bde6127422cf9b7544f291",
+        "bytes": 164,
+        "elapsedMs": 8.109599999996135
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.mentzer",
+            "expected": 17.5,
+            "obtained": 17.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mentzer",
+            "expected": 17.5,
+            "obtained": 17.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "17,5",
+            "obtained": "17,5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "indice-de-mentzer",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+      "originalInput": {
+        "vcm": 65,
+        "hem": 5
+      },
+      "input": {
+        "vcm": 65,
+        "hem": 5
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "mentzer": 13
+        },
+        "verdict": "indeterminado"
+      },
+      "recordedResult": {
+        "main": [
+          "13,0",
+          ""
+        ],
+        "label": "Índice de Mentzer (VCM ÷ hemácias)",
+        "raw": {
+          "mentzer": 13
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-mentzer/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "vcm": 65,
+            "hem": 5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/indice-de-mentzer/calculate",
+          "startedAt": "2026-10-05T17:38:50.769Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "indice-de-mentzer",
+              "main": [
+                "13,0",
+                ""
+              ],
+              "label": "Índice de Mentzer (VCM ÷ hemácias)",
+              "raw": {
+                "mentzer": 13
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "4e18b843259f9f3c61b53c93ef2fbd86cbeb6026ffb2fd40b4a19d0702761539",
+          "bytes": 162,
+          "elapsedMs": 3.930099999997765
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-mentzer/calculate",
+        "startedAt": "2026-10-05T17:38:50.769Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "indice-de-mentzer",
+            "main": [
+              "13,0",
+              ""
+            ],
+            "label": "Índice de Mentzer (VCM ÷ hemácias)",
+            "raw": {
+              "mentzer": 13
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "4e18b843259f9f3c61b53c93ef2fbd86cbeb6026ffb2fd40b4a19d0702761539",
+        "bytes": 162,
+        "elapsedMs": 3.930099999997765
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.mentzer",
+            "expected": 13,
+            "obtained": 13,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mentzer",
+            "expected": 13,
+            "obtained": 13,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "13,0",
+            "obtained": "13,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
