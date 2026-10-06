@@ -65,3 +65,28 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Índice < 13: sugere traço de talassemia (β ou α)
+
+O índice orienta, mas não diagnostica: confirme com ferritina e eletroforese de hemoglobina (HbA2).
+
+
+### 2
+
+Índice > 13: sugere anemia ferropriva
+
+O índice orienta, mas não diagnostica: confirme com ferritina e eletroforese de hemoglobina (HbA2).
+
+
+### 3
+
+Índice = 13: indeterminado
+
+O índice orienta, mas não diagnostica: confirme com ferritina e eletroforese de hemoglobina (HbA2).
+

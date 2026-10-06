@@ -65,3 +65,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Index < 13: suggests thalassemia trait (β or α)
+
+The index guides, but does not diagnose: confirm with ferritin and hemoglobin electrophoresis (HbA2).
+
+
+### 2
+
+Index > 13: suggests iron deficiency anemia
+
+The index guides, but does not diagnose: confirm with ferritin and hemoglobin electrophoresis (HbA2).
+
+
+### 3
+
+Index = 13: indeterminate
+
+The index guides, but does not diagnose: confirm with ferritin and hemoglobin electrophoresis (HbA2).
+

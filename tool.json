@@ -108,7 +108,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Mentzer 1973:VCM/hemácias, milhões/µL; regra de triagemnão diagnóstico",
-    "implementationVersion": "indice-de-mentzer@native-2026-10-03+b08274689a09",
+    "implementationVersion": "indice-de-mentzer@native-2026-10-05+72ec3ac3d3a0",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/4123424/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -204,7 +204,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "b08274689a092b0f9e2d1cda410f3efc2fda670816ff16ca9c60f28af47e6e95"
+      "implementationHash": "72ec3ac3d3a01f6024eaaa274b7ffa3ac55be5c18f677a78af5ace6deb545416",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "indice-de-mentzer@native-2026-10-03+b08274689a09",
+          "previousImplementationHash": "b08274689a092b0f9e2d1cda410f3efc2fda670816ff16ca9c60f28af47e6e95",
+          "implementationHash": "72ec3ac3d3a01f6024eaaa274b7ffa3ac55be5c18f677a78af5ace6deb545416",
+          "scientificBodySha256": "fe992641f5188d9be5c93b1a657bcb0d129746e3d3381ad6e6c1963d2e05a582",
+          "metadataContractHash": "7cc79ed2e83d3e036cbef3899e94a7f24000f52b5139ed6bd94395e3030738e3",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O índice de Mentzer é uma regra de triagem em microcitose, calculada com VCM em fL e hemácias em milhões/µL, não com a contagem bruta por µL. Não confirma deficiência de ferro nem traço talassêmico. A meta-análise de Hoffmann 2015 mostrou que os índices discriminantes não têm sensibilidade e especificidade de 100% e, em conjunto, tiveram desempenho melhor em adultos que em crianças. Resultados sugestivos exigem investigação confirmatória; não se presume a mesma acurácia em todas as populações.",
     "limitsEvidence": {
@@ -234,15 +262,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/indice-de-mentzer/calculator.js",
-    "bytes": 4693,
-    "sha256": "b08274689a092b0f9e2d1cda410f3efc2fda670816ff16ca9c60f28af47e6e95"
+    "bytes": 4898,
+    "sha256": "72ec3ac3d3a01f6024eaaa274b7ffa3ac55be5c18f677a78af5ace6deb545416"
   },
-  "sourceToolSha256": "372bd52788a9139907bfa9c8a57b214d35a1a44b84c00bf298f526e520f36400",
+  "sourceToolSha256": "a5321828a63dcd29755be43830edd7e138a9651886f31b1190d1f1547b60ed04",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "5f79a8256ce88f8d1541eb68b2b2f204f2ed517ef97d29bf08aa099b7cc3ea5b",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

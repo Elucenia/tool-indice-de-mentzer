@@ -1,0 +1,537 @@
+{
+  "id": "indice-de-mentzer",
+  "implementationVersion": "indice-de-mentzer@native-2026-10-05+72ec3ac3d3a0",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Índice < 13: sugere traço de talassemia (β ou α)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "O índice orienta, mas não diagnostica: confirme com ferritina e eletroforese de hemoglobina (HbA2).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Índice > 13: sugere anemia ferropriva",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "O índice orienta, mas não diagnostica: confirme com ferritina e eletroforese de hemoglobina (HbA2).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Índice = 13: indeterminado",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "O índice orienta, mas não diagnostica: confirme com ferritina e eletroforese de hemoglobina (HbA2).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Index < 13: suggests thalassemia trait (β or α)",
+            "locale": "en",
+            "template": "documented-authored-e546d6abfa9b52fd1021"
+          },
+          "note": {
+            "text": "The index guides, but does not diagnose: confirm with ferritin and hemoglobin electrophoresis (HbA2).",
+            "locale": "en",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Index > 13: suggests iron deficiency anemia",
+            "locale": "en",
+            "template": "documented-authored-690b380cc285faba5d82"
+          },
+          "note": {
+            "text": "The index guides, but does not diagnose: confirm with ferritin and hemoglobin electrophoresis (HbA2).",
+            "locale": "en",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Index = 13: indeterminate",
+            "locale": "en",
+            "template": "documented-authored-a2f927fee9f87d091ec0"
+          },
+          "note": {
+            "text": "The index guides, but does not diagnose: confirm with ferritin and hemoglobin electrophoresis (HbA2).",
+            "locale": "en",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Índice < 13: sugiere rasgo de talasemia (β o α)",
+            "locale": "es",
+            "template": "documented-authored-e546d6abfa9b52fd1021"
+          },
+          "note": {
+            "text": "El índice orienta, pero no diagnostica: confirme con ferritina y electroforesis de hemoglobina (HbA2).",
+            "locale": "es",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Índice > 13: sugiere anemia ferropénica",
+            "locale": "es",
+            "template": "documented-authored-690b380cc285faba5d82"
+          },
+          "note": {
+            "text": "El índice orienta, pero no diagnostica: confirme con ferritina y electroforesis de hemoglobina (HbA2).",
+            "locale": "es",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Índice = 13: indeterminado",
+            "locale": "es",
+            "template": "documented-authored-a2f927fee9f87d091ec0"
+          },
+          "note": {
+            "text": "El índice orienta, pero no diagnostica: confirme con ferritina y electroforesis de hemoglobina (HbA2).",
+            "locale": "es",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indice < 13 : suggère un trait thalassémique (β ou α)",
+            "locale": "fr",
+            "template": "documented-authored-e546d6abfa9b52fd1021"
+          },
+          "note": {
+            "text": "L’indice oriente, mais ne diagnostique pas : confirmer par la ferritine et l’électrophorèse de l’hémoglobine (HbA2).",
+            "locale": "fr",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indice > 13 : suggère une anémie ferriprive",
+            "locale": "fr",
+            "template": "documented-authored-690b380cc285faba5d82"
+          },
+          "note": {
+            "text": "L’indice oriente, mais ne diagnostique pas : confirmer par la ferritine et l’électrophorèse de l’hémoglobine (HbA2).",
+            "locale": "fr",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indice = 13 : indéterminé",
+            "locale": "fr",
+            "template": "documented-authored-a2f927fee9f87d091ec0"
+          },
+          "note": {
+            "text": "L’indice oriente, mais ne diagnostique pas : confirmer par la ferritine et l’électrophorèse de l’hémoglobine (HbA2).",
+            "locale": "fr",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Index < 13: spricht für ein Thalassämie-Merkmal (β oder α)",
+            "locale": "de",
+            "template": "documented-authored-e546d6abfa9b52fd1021"
+          },
+          "note": {
+            "text": "Der Index gibt eine Orientierung, diagnostiziert jedoch nicht: mit Ferritin und Hämoglobinelektrophorese (HbA2) bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Index > 13: spricht für eine Eisenmangelanämie",
+            "locale": "de",
+            "template": "documented-authored-690b380cc285faba5d82"
+          },
+          "note": {
+            "text": "Der Index gibt eine Orientierung, diagnostiziert jedoch nicht: mit Ferritin und Hämoglobinelektrophorese (HbA2) bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Index = 13: unbestimmt",
+            "locale": "de",
+            "template": "documented-authored-a2f927fee9f87d091ec0"
+          },
+          "note": {
+            "text": "Der Index gibt eine Orientierung, diagnostiziert jedoch nicht: mit Ferritin und Hämoglobinelektrophorese (HbA2) bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indice < 13: suggerisce tratto talassemico (β o α)",
+            "locale": "it",
+            "template": "documented-authored-e546d6abfa9b52fd1021"
+          },
+          "note": {
+            "text": "L’indice orienta, ma non diagnostica: confermare con ferritina ed elettroforesi dell’emoglobina (HbA2).",
+            "locale": "it",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indice > 13: suggerisce anemia sideropenica",
+            "locale": "it",
+            "template": "documented-authored-690b380cc285faba5d82"
+          },
+          "note": {
+            "text": "L’indice orienta, ma non diagnostica: confermare con ferritina ed elettroforesi dell’emoglobina (HbA2).",
+            "locale": "it",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indice = 13: indeterminato",
+            "locale": "it",
+            "template": "documented-authored-a2f927fee9f87d091ec0"
+          },
+          "note": {
+            "text": "L’indice orienta, ma non diagnostica: confermare con ferritina ed elettroforesi dell’emoglobina (HbA2).",
+            "locale": "it",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "المؤشر < 13: يشير إلى سمة ثلاسيميا (β أو α)",
+            "locale": "ar",
+            "template": "documented-authored-e546d6abfa9b52fd1021"
+          },
+          "note": {
+            "text": "المؤشر يوجّه، لكنه لا يشخّص: أكّد ذلك بالفيريتين ورحلان الهيموغلوبين الكهربائي (HbA2).",
+            "locale": "ar",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "المؤشر > 13: يشير إلى فقر دم بعوز الحديد",
+            "locale": "ar",
+            "template": "documented-authored-690b380cc285faba5d82"
+          },
+          "note": {
+            "text": "المؤشر يوجّه، لكنه لا يشخّص: أكّد ذلك بالفيريتين ورحلان الهيموغلوبين الكهربائي (HbA2).",
+            "locale": "ar",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "المؤشر = 13: غير محدد",
+            "locale": "ar",
+            "template": "documented-authored-a2f927fee9f87d091ec0"
+          },
+          "note": {
+            "text": "المؤشر يوجّه، لكنه لا يشخّص: أكّد ذلك بالفيريتين ورحلان الهيموغلوبين الكهربائي (HbA2).",
+            "locale": "ar",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "指数 < 13：提示地中海贫血携带状态（β或α）",
+            "locale": "zh",
+            "template": "documented-authored-e546d6abfa9b52fd1021"
+          },
+          "note": {
+            "text": "该指数提供指向，但不能诊断：请用铁蛋白和血红蛋白电泳（HbA2）确认。",
+            "locale": "zh",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "指数 > 13：提示缺铁性贫血",
+            "locale": "zh",
+            "template": "documented-authored-690b380cc285faba5d82"
+          },
+          "note": {
+            "text": "该指数提供指向，但不能诊断：请用铁蛋白和血红蛋白电泳（HbA2）确认。",
+            "locale": "zh",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "指数 = 13：不确定",
+            "locale": "zh",
+            "template": "documented-authored-a2f927fee9f87d091ec0"
+          },
+          "note": {
+            "text": "该指数提供指向，但不能诊断：请用铁蛋白和血红蛋白电泳（HbA2）确认。",
+            "locale": "zh",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "指標 < 13：サラセミア形質（βまたはα）を示唆",
+            "locale": "ja",
+            "template": "documented-authored-e546d6abfa9b52fd1021"
+          },
+          "note": {
+            "text": "この指標は目安にはなるが、診断はしない：フェリチンとヘモグロビン電気泳動（HbA2）で確認する。",
+            "locale": "ja",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "指標 > 13：鉄欠乏性貧血を示唆",
+            "locale": "ja",
+            "template": "documented-authored-690b380cc285faba5d82"
+          },
+          "note": {
+            "text": "この指標は目安にはなるが、診断はしない：フェリチンとヘモグロビン電気泳動（HbA2）で確認する。",
+            "locale": "ja",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "指標 = 13：判定不能",
+            "locale": "ja",
+            "template": "documented-authored-a2f927fee9f87d091ec0"
+          },
+          "note": {
+            "text": "この指標は目安にはなるが、診断はしない：フェリチンとヘモグロビン電気泳動（HbA2）で確認する。",
+            "locale": "ja",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "VCM 65, hemácias 5,5: 11,8 (traço talassêmico)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सूचकांक < 13: थैलेसीमिया लक्षण (β या α) का संकेत देता है",
+            "locale": "hi",
+            "template": "documented-authored-e546d6abfa9b52fd1021"
+          },
+          "note": {
+            "text": "सूचकांक मार्गदर्शन करता है, लेकिन निदान नहीं करता: फेरीटिन और हीमोग्लोबिन इलेक्ट्रोफोरेसिस (HbA2) से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VCM 70, hemácias 4,0: 17,5 (ferropriva)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सूचकांक > 13: आयरन की कमी से होने वाले एनीमिया का संकेत देता है",
+            "locale": "hi",
+            "template": "documented-authored-690b380cc285faba5d82"
+          },
+          "note": {
+            "text": "सूचकांक मार्गदर्शन करता है, लेकिन निदान नहीं करता: फेरीटिन और हीमोग्लोबिन इलेक्ट्रोफोरेसिस (HbA2) से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Corte: VCM 65, hemácias 5,0: 13,0 (indeterminado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सूचकांक = 13: अनिर्धारित",
+            "locale": "hi",
+            "template": "documented-authored-a2f927fee9f87d091ec0"
+          },
+          "note": {
+            "text": "सूचकांक मार्गदर्शन करता है, लेकिन निदान नहीं करता: फेरीटिन और हीमोग्लोबिन इलेक्ट्रोफोरेसिस (HbA2) से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-3d165793813fab63ed07"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}
